@@ -24,7 +24,7 @@ uv sync
 
 ## Usage
 
-### 1. Streaming VCF input and output to bcftools (recommended to get bgzipped output VCF). All samples get he same values.
+### 1. Streaming VCF input and output to bcftools (recommended to get bgzipped output VCF). All samples get the same values.
 ```bash
 bcftools view synthetic.vcf.gz | python fix_synthetic_data.py | bgzip -@ 4 -c > synthetic_fixed.vcf.gz
 bcftools index -t synthetic_fixed.vcf.gz
